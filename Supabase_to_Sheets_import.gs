@@ -2,6 +2,8 @@
 // Batched sheet clear, batched data import to allow scaling beyong ~20k rows
 // Written with AI tools in Aug 2025, tested on a project with 3,700 rows.
 
+// Unique: Faster version, clears sheet and then adds new data. Not robust against missing data in case of script failure.
+
 const SUPABASE_URL = 'https://abcdefghijklmnopqrst.supabase.co';
 const SUPABASE_ANON_KEY = 'YOUR_KEY_HERE';
 const SUPABASE_TABLE_NAME = 'your_table_01';
